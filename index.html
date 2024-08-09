@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Metal Calculator</title>
+  </head>
+  <body>
+    <div class="stock-container">
+      <div id="line"></div>
+    </div>
+
+    <div class="container">
+      <div id="conversion"></div>
+
+      <div class="calculator">
+        <h2>Metal Exchange Calculator</h2>
+        <form>
+          <div class="display">
+            <input
+              type="text"
+              name="display"
+              id="weight"
+              placeholder="Weight in GRAMS"
+              style="font-size: 30px"
+            />
+          </div>
+          <div>
+            <input type="button" value="AC" onclick="display.value = ''" />
+            <select name="Metal" id="metal">
+              <option value="gold" selected>Gold</option>
+              <option value="silver">Silver</option>
+              <option value="platinum">Platinum</option>
+              <option value="palladium">Palladium</option>
+              <option value="copper">Copper</option>
+              <option value="zinc">Zinc</option>
+              <option value="nickel">Nickel</option>
+            </select>
+          </div>
+          <div>
+            <input type="button" value="7" onclick="display.value += '7'" />
+            <input type="button" value="8" onclick="display.value += '8'" />
+            <input type="button" value="9" onclick="display.value += '9'" />
+          </div>
+
+          <div>
+            <input type="button" value="4" onclick="display.value += '4'" />
+            <input type="button" value="5" onclick="display.value += '5'" />
+            <input type="button" value="6" onclick="display.value += '6'" />
+          </div>
+
+          <div>
+            <input type="button" value="1" onclick="display.value += '1'" />
+            <input type="button" value="2" onclick="display.value += '2'" />
+            <input type="button" value="3" onclick="display.value += '3'" />
+          </div>
+
+          <div>
+            <input type="button" value="." onclick="display.value += '.'" />
+            <input type="button" value="0" onclick="display.value += '0'" />
+            <input type="button" value="=" class="equal" onclick="getPrice()" />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>

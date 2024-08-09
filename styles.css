@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: #8e2b3d;
+}
+
+.container {
+  margin-top: auto;
+  width: 100%;
+  height: 100vh;
+  background: #8e2b3d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.calculator {
+  background: #5d0c1e;
+  padding: 40px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.calculator form input {
+  border: 0;
+  outline: 0;
+  width: 80px;
+  height: 60px;
+  border-radius: 10px;
+  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.2);
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px;
+}
+
+form .display {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0;
+}
+
+form .display input {
+  text-align: right;
+  flex: 1;
+  font-size: 45px;
+  box-shadow: none;
+}
+
+#metal {
+  border: 0;
+  outline: 0;
+  width: 185px;
+  height: 60px;
+  border-radius: 10px;
+  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.2);
+  background: transparent;
+  color: #fff;
+  background-color: #7a1212;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.info {
+  top: 10px;
+  right: 10px;
+  color: white;
+  font-size: 20px;
+}
+
+form input[type="button"] {
+  background: #7a1212;
+}
+
+form input[type="button"]:hover {
+  background: #71041b;
+}
+
+form input[type="button"]:active {
+  background: #660808;
+}
