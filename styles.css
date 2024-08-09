@@ -83,3 +83,25 @@ form input[type="button"]:hover {
 form input[type="button"]:active {
   background: #660808;
 }
+
+@media (max-width: 768px) {
+  .calculator {
+    padding: 20px;
+  }
+
+  form input {
+    width: 60px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  form .display input {
+    font-size: 30px;
+  }
+
+  #metal {
+    width: 120px;
+    height: 40px;
+    font-size: 20px;
+  }
+}
